@@ -25,4 +25,5 @@ _ext
 /ICDAR_2015/
 /pths/
 *.jpg
+/evaluate/gt/
 
