@@ -1,14 +1,20 @@
 ## Description
-This is a PyTorch Re-Implementation of [EAST: An Efficient and Accurate Scene Text Detector](http://openaccess.thecvf.com/content_cvpr_2017/papers/Zhou_EAST_An_Efficient_CVPR_2017_paper.pdf).
-
+This is a project fork from [EAST](https://github.com/SakuraRiven/EAST)
+the origin use:
 * Only RBOX part is implemented.
 * Using dice loss instead of class-balanced cross-entropy loss. Some codes refer to [argman/EAST](https://github.com/argman/EAST) and [songdejia/EAST](https://github.com/songdejia/EAST)
 * The pre-trained model provided achieves __82.79__ F-score on ICDAR 2015 Challenge 4 using only the 1000 images. see [here](http://rrc.cvc.uab.es/?ch=4&com=evaluation&view=method_info&task=1&m=52405) for the detailed results.
+
+while i use giou loss function for giou-east, use efficient-east and iou loss for efficient-east, the result is as follow:
+the pretrained model can be download at [here](https://pan.baidu.com/s/1_rW0SYm9ycJPAPHKZWc2ZQ) password: __9qmd__
 
 | Model | Loss | Recall | Precision | F-score | 
 | - | - | - | - | - |
 | Original | CE | 72.75 | 80.46 | 76.41 |
 | Re-Implement | Dice | 81.27 | 84.36 | 82.79 |
+| giou-east | Giou | 78.91 | 84.65 | 81.68 |
+| efficient-east | Iou | 80.21 | 82.06 | 81.12
+
 
 ## Prerequisites
 Only tested on

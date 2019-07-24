@@ -1,7 +1,8 @@
 import torch
 from torchvision import transforms
 from PIL import Image, ImageDraw
-from model import EAST
+# from model import EAST
+from efficient_model import EAST
 import os
 from dataset import get_rotate_mat
 import numpy as np
@@ -181,8 +182,8 @@ def detect_dataset(model, device, test_img_path, submit_path):
 
 
 if __name__ == '__main__':
-	img_path    = '../ICDAR_2015/test_img/img_2.jpg'
-	model_path  = './pths/east_vgg16.pth'
+	img_path    = './ICDAR_2015/test_img/img_2.jpg'
+	model_path  = './pths/model_epoch_340.pth'
 	res_img     = './res.bmp'
 	device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 	model = EAST().to(device)
