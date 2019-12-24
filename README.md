@@ -6,7 +6,7 @@ the origin use:
 * The pre-trained model provided achieves __82.79__ F-score on ICDAR 2015 Challenge 4 using only the 1000 images. see [here](http://rrc.cvc.uab.es/?ch=4&com=evaluation&view=method_info&task=1&m=52405) for the detailed results.
 
 while i use giou loss function for giou-east, use efficient-east and iou loss for efficient-east, the result is as follow:
-the pretrained model can be download at [here](https://pan.baidu.com/s/1eXLnqRACmjFFZS2uA_PKwg) password: __3f99__
+the pretrained model can be download at [here](https://pan.baidu.com/s/1Jz1bVJLk65xPiYO3G3Vt3w)password: __8a2j__
 
 | Model | Loss | Recall | Precision | F-score | 
 | - | - | - | - | - |
